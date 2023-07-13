@@ -1,0 +1,6 @@
+#input("which year passed out from college")
+passed_out_yr=input("which year passed out from college")
+print(passed_out_yr)
+#ype_of_passed_out_ysr=type(passed_out_ysr)
+#rint(type_of_passed_out_ysr)
+passed_out_yr=str(passed_out_yr)
