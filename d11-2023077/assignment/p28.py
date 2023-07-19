@@ -6,7 +6,9 @@ m4="4.Checkout"
 print(m1,"\n",m2,"\n",m3,"\n",m4)
 cur_kc=0
 tot_cost=10
-tax_shipping=
+sales_tax=0.0825
+shi_cost=5
+per_cost=1
 def add_keychains():
     global cur_kc
     c1=int(input(f"you have {cur_kc}keychains. how many to add?"))
@@ -22,13 +24,24 @@ def remove_keychains():
 def view_keychains():
     global cur_kc
     global tot_cost
+    global sales_tax
+    global shi_cost
+    global per_cost  
     print(f"\n you have {cur_kc} keychains")
+    print(f"price per keychain{per_cost}")
+    print(f"shipping cost:"cur_kc*shi_cost)
     print("keychains cost $10 each")
     print(f"total cost is{cur_kc*tot_cost}")
+    gst=(cur_kc*tot_cost)
+    print(f"{cur_kc*per_cost+shi_cost}")
+    print(f"")
     print("\n",m1,"\n",m2,"\n",m3,"\n",m4)
 def checkout():
     global cur_kc
     global tot_cost
+    global sales_tax
+    global shi_cost
+    global per_cost 
     print("CHECKOUT")
     c3=input("what is your name?")
     print(f"you have {cur_kc} keychains")
