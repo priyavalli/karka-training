@@ -60,13 +60,13 @@ print("\n")
 for i in my_resume['personal-details']:
     #print(i)
     #print(my_resume[i])
-    print(f"{i}:{my_resume['personal-details'][i]}")
-if(i==['address']):
-    for j in my_resume['personal-details']['address']:
-            print(j)
+    #print(f"{i}:{my_resume['personal-details'][i]}" 
+    if(i=="address"):
+         for j in my_resume['personal-details']['address']:
+            print(f"{j}:{my_resume['personal-details']['address'][j]}")
+            #print(f"{j}:{my_resume['personal-details']['address']['door no']}")
 #for j in my_resume['educational-qualification']:
     #print(j) 
-    #print("\n")
     #print(j["level"])
 
 
